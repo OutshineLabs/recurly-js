@@ -1,4 +1,5 @@
-var npmPackageJson = Npm.require('./package.json');
+
+var npmPackageJson = JSON.parse(process.env.PACKAGE_JSON);
 
 Package.describe({
   name: 'dreid93:recurly-js',

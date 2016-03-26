@@ -4,6 +4,10 @@
   "version": "4.0.1",
   "license": "MIT",
   "main": "recurly.js",
+  "scripts": {
+    "meteor_publish_create": "PACKAGE_JSON=$(cat ./package.json) meteor publish --create",
+    "meteor_publish": "PACKAGE_JSON=$(cat ./package.json) meteor publish"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/recurly/recurly-js.git"
